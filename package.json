@@ -1,0 +1,14 @@
+{
+  "name": "cu-text-distorter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc && node scripts/copy-html.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C:U Text Distorter</title>
+  </head>
+  <body>
+    <main>
+      <h1>Casualties: Unknown Text Distorter</h1>
+
+      <p>
+        <label for="source-text">Original text</label>
+        <br>
+        <textarea id="source-text" rows="8" cols="60"></textarea>
+      </p>
+
+      <p>
+        <label for="brain-health">Brain health</label>
+        <input id="brain-health" type="range" min="0" max="100" step="1" value="100">
+        <output id="health-value" for="brain-health">100%</output>
+      </p>
+      <p>
+        Distortion strength:
+        <output id="distortion-value" for="brain-health">0%</output>
+      </p>
+
+      <p>
+        <label for="distorted-text">Distorted text</label>
+        <br>
+        <textarea id="distorted-text" rows="8" cols="60" readonly></textarea>
+      </p>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
