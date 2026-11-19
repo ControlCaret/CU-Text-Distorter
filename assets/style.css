@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Retro Gaming';
+  src: url('./fonts/Retro-Gaming.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Retro Gaming Plus';
+  src: url('./fonts/Retro-Gaming-Plus.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeoDunggeunmo Pro';
+  src: url('./fonts/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unifont';
+  src: url('./fonts/unifont-17.0.04.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: 'Retro Gaming', 'Retro Gaming Plus', 'NeoDunggeunmo Pro', 'Unifont', monospace;
+  font-synthesis: none;
+  color: #fff;
+  background: #000;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 48px 24px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 4px solid #fff;
+}
+
+h1 {
+  margin: 0 0 32px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.text-field label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 160px;
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  outline: none;
+  font: inherit;
+  color: #fff;
+  background: #000;
+  resize: vertical;
+}
+
+input:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.health-control {
+  margin: 28px 0;
+}
+
+.health-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+input[type='range'] {
+  --track: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #fff var(--health, 100%), #939393 var(--health, 100%)) border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 32px;
+  margin: 8px 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  height: 24px;
+  border: 2px solid transparent;
+  background: var(--track);
+}
+
+input[type='range']::-moz-range-track {
+  box-sizing: border-box;
+  height: 24px;
+  border: 2px solid transparent;
+  background: var(--track);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  margin-top: -2px;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+
+.distortion-strength {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+#distortion-value {
+  color: #f6ff73;
+}
+
+footer {
+  max-width: 800px;
+  margin: 24px auto 0;
+  color: #aaa;
+  font-size: 12px;
+}
+
+footer a {
+  color: inherit;
+}
+
+summary {
+  cursor: pointer;
+}
+
+::selection {
+  color: #000;
+  background: #fff;
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 16px 12px;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}

@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C:U Text Distorter</title>
+    <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
     <main>
       <h1>Casualties: Unknown Text Distorter</h1>
 
-      <p>
+      <div class="text-field">
         <label for="source-text">Original text</label>
-        <br>
         <textarea id="source-text" rows="8" cols="60"></textarea>
-      </p>
+      </div>
 
-      <p>
-        <label for="brain-health">Brain health</label>
+      <div class="health-control">
+        <div class="health-label">
+          <label for="brain-health">Brain health</label>
+          <output id="health-value" for="brain-health">100%</output>
+        </div>
         <input id="brain-health" type="range" min="0" max="100" step="1" value="100">
-        <output id="health-value" for="brain-health">100%</output>
-      </p>
-      <p>
-        Distortion strength:
-        <output id="distortion-value" for="brain-health">0%</output>
-      </p>
+        <p class="distortion-strength">
+          Distortion strength:
+          <output id="distortion-value" for="brain-health">0%</output>
+        </p>
+      </div>
 
-      <p>
+      <div class="text-field">
         <label for="distorted-text">Distorted text</label>
-        <br>
         <textarea id="distorted-text" rows="8" cols="60" readonly></textarea>
-      </p>
+      </div>
     </main>
+
+    <footer>
+      <p>
+        This is an unofficial fan project.
+        All rights to <a href="https://store.steampowered.com/app/4576490/Casualties_Unknown/">Casualties: Unknown</a>
+        and its related game content belong to their respective rights holders, including
+        <a href="https://orsonik.itch.io/">Orsoniks</a>
+        and/or <a href="https://www.orointeractive.com/">Oro Interactive</a>.
+        This project is not affiliated with or endorsed by them.
+      </p>
+      <details>
+        <summary>Licenses</summary>
+        <ul>
+          <li>Retro Gaming by Daymarius — <a href="https://www.dafont.com/retro-gaming.font">Source</a></li>
+          <li>Retro Gaming Plus by Catterio Sylt — <a href="https://github.com/Catterio/xtmp-casualtiesunknown-fallback-fonts">Source</a> · <a href="./assets/fonts/licenses/Retro-Gaming-Plus.txt">MIT-0</a></li>
+          <li>
+            NeoDunggeunmo Pro — <a href="https://github.com/neodgm/neodgm-pro">Source</a> · <a href="./assets/fonts/licenses/NeoDunggeunmoPro.txt">SIL OFL 1.1</a><br>
+            Copyright © 2017-2024, Eunbin Jeong (Dalgona.) &lt;project-neodgm@dalgona.dev&gt;<br>
+            with reserved font name "Neo둥근모 Pro" and "NeoDunggeunmo Pro".
+          </li>
+          <li>
+            GNU Unifont — <a href="https://unifoundry.com/unifont/index.html">Source</a> · <a href="./assets/fonts/licenses/unifont.txt">SIL OFL 1.1</a><br>
+            Copyright © 1998-2026 Roman Czyborra, Paul Hardy, Qianqian Fang, Andrew Miller, Johnnie Weaver, David Corbett, Ælla Chiana Moskopp, Rebecca Bettencourt, Ho-Seok Ee, et al.
+          </li>
+        </ul>
+      </details>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>

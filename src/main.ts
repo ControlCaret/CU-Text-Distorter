@@ -16,6 +16,7 @@ const distortionValue = element('distortion-value', HTMLOutputElement);
 
 function update(): void {
   const brainHealth = health.valueAsNumber;
+  health.style.setProperty('--health', `${brainHealth}%`);
   healthValue.value = `${brainHealth}%`;
   distortionValue.value = `${Math.round(distortionAmount(brainHealth) * 100)}%`;
   result.value = distortText(source.value, brainHealth);

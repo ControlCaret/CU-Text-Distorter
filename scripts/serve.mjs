@@ -6,6 +6,14 @@ const files = new Map([
   ['/index.html', ['index.html', 'text/html; charset=utf-8']],
   ['/main.js', ['main.js', 'text/javascript; charset=utf-8']],
   ['/distort.js', ['distort.js', 'text/javascript; charset=utf-8']],
+  ['/assets/style.css', ['assets/style.css', 'text/css; charset=utf-8']],
+  ['/assets/fonts/Retro-Gaming.ttf', ['assets/fonts/Retro-Gaming.ttf', 'font/ttf']],
+  ['/assets/fonts/Retro-Gaming-Plus.ttf', ['assets/fonts/Retro-Gaming-Plus.ttf', 'font/ttf']],
+  ['/assets/fonts/NeoDunggeunmoPro-Regular.woff2', ['assets/fonts/NeoDunggeunmoPro-Regular.woff2', 'font/woff2']],
+  ['/assets/fonts/unifont-17.0.04.woff2', ['assets/fonts/unifont-17.0.04.woff2', 'font/woff2']],
+  ['/assets/fonts/licenses/Retro-Gaming-Plus.txt', ['assets/fonts/licenses/Retro-Gaming-Plus.txt', 'text/plain; charset=utf-8']],
+  ['/assets/fonts/licenses/NeoDunggeunmoPro.txt', ['assets/fonts/licenses/NeoDunggeunmoPro.txt', 'text/plain; charset=utf-8']],
+  ['/assets/fonts/licenses/unifont.txt', ['assets/fonts/licenses/unifont.txt', 'text/plain; charset=utf-8']],
 ]);
 
 const port = Number(process.argv[2] ?? 8080);
