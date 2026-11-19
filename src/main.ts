@@ -1,4 +1,5 @@
 import { distortText, distortionAmount } from './distort.ts';
+import { conditionColor } from './colors.ts';
 
 function element<T extends HTMLElement>(id: string, type: new () => T): T {
   const found = document.getElementById(id);
@@ -18,6 +19,7 @@ function update(): void {
   const brainHealth = health.valueAsNumber;
   health.style.setProperty('--health', `${brainHealth}%`);
   healthValue.value = `${brainHealth}%`;
+  healthValue.style.color = conditionColor(brainHealth);
   distortionValue.value = `${Math.round(distortionAmount(brainHealth) * 100)}%`;
   result.value = distortText(source.value, brainHealth);
 }

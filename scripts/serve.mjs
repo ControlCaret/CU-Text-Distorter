@@ -6,6 +6,7 @@ const files = new Map([
   ['/index.html', ['index.html', 'text/html; charset=utf-8']],
   ['/main.js', ['main.js', 'text/javascript; charset=utf-8']],
   ['/distort.js', ['distort.js', 'text/javascript; charset=utf-8']],
+  ['/colors.js', ['colors.js', 'text/javascript; charset=utf-8']],
   ['/assets/style.css', ['assets/style.css', 'text/css; charset=utf-8']],
   ['/assets/fonts/Retro-Gaming.ttf', ['assets/fonts/Retro-Gaming.ttf', 'font/ttf']],
   ['/assets/fonts/Retro-Gaming-Plus.ttf', ['assets/fonts/Retro-Gaming-Plus.ttf', 'font/ttf']],
