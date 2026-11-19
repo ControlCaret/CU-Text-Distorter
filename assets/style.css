@@ -162,7 +162,7 @@ summary {
   background: #fff;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   body {
     padding: 16px 12px;
   }
