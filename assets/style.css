@@ -12,13 +12,19 @@
 
 @font-face {
   font-family: 'NeoDunggeunmo Pro';
-  src: url('./fonts/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  src:
+    url('./fonts/NeoDunggeunmoPro-Regular.woff2') format('woff2'),
+    url('./fonts/NeoDunggeunmoPro-Regular.woff') format('woff'),
+    url('./fonts/NeoDunggeunmoPro-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Unifont';
-  src: url('./fonts/unifont-17.0.04.woff2') format('woff2');
+  src:
+    url('./fonts/unifont-17.0.04.woff2') format('woff2'),
+    url('./fonts/unifont-17.0.04.woff') format('woff'),
+    url('./fonts/unifont-17.0.04.otf') format('opentype');
   font-display: swap;
 }
 
